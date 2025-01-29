@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  
+  
+}
+.portfolio-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  min-height: 100vh;  flex-wrap: wrap; 
+
+ 
+  
+  }.lalit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+     gap: 20px;
+    height: 15vh;
+    width: 100%;
+  }
+
+  
+.lalit  li{
+  display: inline-block;
+  list-style: none;
+   flex-direction: column;  position: relative; 
+  
+
+
+  
+}
+.lalit  li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #fff;
+}
+.lalit  li a:hover{
+  font-size: large;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color:#bbb;
+}
+.left{
+background-color:#262526;
+width: 70%;
+
+padding-left: 3rem;
+display: flex;
+align-items: center;
+min-height: 100vh;  flex-wrap: wrap; 
+}
+
+.textleft h4{
+  
+  color: #fff;
+  display: flex;
+  gap: 40px;
+}
+.textleft h4 ul li{
+  display: inline-block;
+  margin-left: 20px;
+}
+.right{
+  align-items: center;
+  display: flex;
+  width: 30%;
+  height: 100vh;
+background-color: #3877ff;
+min-height: 100vh;  flex-wrap: wrap; 
+}
+
+  
+.right .right1 img{
+  width: 70%;
+  height: 60vh;
+  
+  margin-left: 30px;
+  border-radius: 200px;
+  border: 2px solid rosybrown;
+  width: 100%;  max-width: 300px; 
+
+}
+
+.icons .fa-brands{
+color: #bbb;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+  
+  
+}
+.textleft{
+margin-left: 4rem;
+}
+.textleft h2{
+  font-size: 1.5rem;
+  color: #fff;
+}
+.textleft h1{
+  font-size: 3rem;
+  color: #5DB9EE;
+}
+.textleft p{
+  font-size: 1rem;
+  color: #fff;
+  max-width: 38rem;
+  margin: 1.1rem 0 3rem 0;
+  line-height: 1.8rem;
+ 
+}
+.btn-lalit button{
+  border: .1rem solid #5DB9ee;
+  font-size: 1.1rem;
+  padding: .8rem 1.5rem;
+  border-radius: .5rem;
+  margin-top: 40px;
+ 
+   
+   
+}
+button:nth-child(1){
+  background-color: #5DB9EE;
+}
+button:nth-child(2){
+  background-color: #5DB9EE;
+  margin-left: 2rem;
+}
+button:nth-child(1):hover{
+  background-color: #031925;
+  padding: 1rem 1.9rem;
+}
+button:nth-child(2):hover{
+  padding: 1rem 1.9rem;
+  background-color: #0e23c1;
+  margin-left: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  /* ✅ Ensure full container is in column */
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ✅ Left aur Right ko column-wise fix karein */
+  .left, .right {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left {
+    padding-top: 80px; /* Navbar overlap fix */
+  }
+
+  /* ✅ Right section ki flex-direction: column karna */
+  .right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto; /* Height auto karna taaki wrap ho sake */
+    padding: 20px;
+  }
+
+  /* ✅ Image ko center aur responsive banayenge */
+  .right .right1 img {
+    width: 60%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid rosybrown;
+    margin-top: 20px;
+  }
+}
+
